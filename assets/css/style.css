@@ -1,0 +1,440 @@
+/* ============== CSS STARTS ================ */
+/* ============== Google Fonts ================ */
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Balsamiq+Sans:wght@400;700&family=Bigshot+One&family=Playball&display=swap');
+
+/* ============== CSS ROOT STARTS ================ */
+:root{
+    --color-1 : #fff;
+    --color-1-alt : rgb(194, 182, 182);
+    --color-2 : #000;
+    --color-3 : rgba(224, 28, 224, 0.89);
+    --header-color:linear-gradient(45deg, rgba(9, 177, 228, 0.603),rgba(233, 12, 222, 0.733));
+    --btn-color:linear-gradient(45deg, rgba(248, 9, 156, 0.603),rgba(233, 211, 12, 0.733));
+    --glass-color:linear-gradient(45deg, rgba(9, 177, 228, 0.603),rgba(233, 12, 222, 0.733));
+    --body-color:linear-gradient(45deg, rgba(252, 42, 15, 0.603),rgba(245, 41, 218, 0.733));
+
+    /* ========== Font Family ========== */
+    --body-font: 'Balsamiq Sans', cursive;
+
+}
+
+/* ============== CSS BASIC STARTS ================ */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+body{
+    background: var(--body-color);
+    font-family: var(--body-font)
+
+}
+html{
+    scroll-behavior: unset !important;
+}
+a{
+    text-decoration: none;
+    font-family: 'Balsamiq Sans', cursive;
+
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.title{
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    font-family: 'Aladin', cursive;
+}
+.subtitle{
+    font-size: 1rem;
+}
+
+
+/* ===================== THEME CSS ========================== */
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.glass{
+    position: relative;
+    width: 100%;
+    padding: 50px;
+    margin: auto;
+    background: var(--glass-color);
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-right: 1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    /* backdrop-filter: blur(5px); */
+}
+.glass::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.1);
+    pointer-events: none;
+    transform: skewX(-15deg);
+}
+
+/* ========================== ALL USED ICON CSS ======================== */
+.nav-toggle-icon{
+    cursor: pointer;
+}
+.home-icon{
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.my-btn{
+    border-radius: 2rem;
+    padding: 10px 25px;
+    font-weight: bold;
+    background: var(--btn-color);
+}
+.services-btn-icon{
+    color: #0d6efd;
+    font-size: 1.1rem;
+}
+.swipe-icon{
+    font-size: 1.5rem;
+    animation: swipe .6s linear infinite;
+}
+@keyframes swipe{
+    from {color: var(--color-1);}
+
+    to {color: var(--color-1-alt);}
+}
+
+/* ========================== HEADER SECTION CSS ======================== */
+.header{
+    width: 100%;
+    z-index: 10;
+    box-shadow:0 4px 10px #fff ;
+}
+.navbar-toggler,
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+.dropdown-item{
+    color: #fff;
+    background: var(--body-color);
+
+
+}
+.dropdown-item:hover{
+    color: #fff;
+    background: var(--glass-color);
+}
+.navbar-dark{
+    background: var(--glass-color);
+}
+
+/* ========================== HOME CSS ======================== */
+.home-img{
+    width: 14rem;
+    height: 14rem;
+    border-radius: 10px;
+}
+
+/* ========================== ABOUT SECTION CSS ======================== */
+.about-img{
+    max-width: 20rem;
+}
+.about p{
+    text-align: justify;
+}
+
+/* ========================== SKILLS SECTION CSS ======================== */
+
+/* -------------- ACCORDIAN FOR SKILLS SECTION------------- */
+.accordion-button{
+    background: var(--btn-color);
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
+.accordion-body,
+.accordion-item{
+    background: transparent !important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* ---------------------- SKILLS DESIGN ------------------------ */
+.skill-name{
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+}
+.skills-bar,
+.skills-percentage{
+    height: 6px;
+    border: .25rem;
+    border-radius: 4px;
+}
+.skills-bar{
+    background-color: rgba(255, 255, 255, 0.822);
+}
+.skills-percentage{
+    display: block;
+    background-color: rgb(248, 20, 172);
+}
+.skills-html{
+    width: 60%;
+}
+.skills-css{
+    width: 50%;
+}
+.skills-js{
+    width: 30%;
+}
+.skills-bs{
+    width: 80%;
+}
+.skills-php{
+    width: 50%;
+}
+.skills-node{
+    width: 40%;
+}
+.skills-mongo{
+    width: 30%;
+}
+.skills-python{
+    width: 30%;
+}
+.skills-catia{
+    width: 65%;
+}
+
+.skills-cad{
+    width: 40%;
+}
+.skills-ugnx{
+    width: 60%;
+}
+.skills-photoshop{
+    width: 80%;
+}
+
+/* ========================== QUALIFICATION SECTION CSS ======================== */
+.qualif_data{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 2rem;
+}
+.qualif_rounder{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.qualif_line{
+    display:block;
+    width: 1px;
+    height: 100%;
+    background-color: #fff;
+    transform: translate(6px,-7px);
+}
+
+/* ========================== SERVICES SECTION CSS ======================== */
+
+.madal-title,
+.modal-body p,
+.modal-icon{
+    color: #000;
+}
+
+/* ========================== PORTTFOLIO SECTION CSS ======================== */
+
+.carousel-item img{
+    width: 50vw;
+    height: auto;
+}
+
+.contact-icon{
+    font-size: 2rem;
+    margin-right: 15px;
+}
+
+/* ========================== NEW PROJECT SECTION CSS ======================== */
+.project-img{
+    max-width: 15rem;
+    max-height: 15rem;
+    border-radius: 1rem;
+    margin: auto;
+}
+
+/* ========================== TESTIMONIAL SECTION CSS ======================== */
+
+.testimonial{
+    position: relative;
+    max-width: 100%;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    margin: 0 20px;
+
+}
+
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right
+{
+    background-image: none;
+}
+
+.testimonial .card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: #333;
+    padding: 60px 40px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+
+}
+.testimonial .card .layer{
+    position: absolute;
+    top: calc(100% - 4px);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#04b0ff, #dd08d6);
+    z-index: 1;
+    transition: .5s;
+}
+.testimonial .card:hover .layer{
+    top: 0;
+}
+.testimonial .card .content{
+    position: relative;
+    z-index: 2;
+}
+.testimonial .card .content p{
+    font-size: 1rem;
+    line-height: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.testimonial .card .content .imgBx{
+    align-self: center;
+    align-content: center;
+    margin: 10px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid rgb(13, 228, 199) ;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.testimonial .card .content .imgBx img{
+    width: 100%;
+}
+
+.testimonial .card .content h2{
+    font-size: 18px;
+    color: #fff;
+
+}
+.testimonial .card .content h2 span{
+    color: rgb(21, 175, 196);
+    font-size: 14px;
+    transition: 0.5s;
+}
+.testimonial .card:hover .content h2 span{
+    color: #fff;
+}
+
+
+
+/* ========================== CONTACT SECTION CSS ======================== */
+.form-control,
+.form-control:focus
+{
+  box-shadow: none;
+}
+
+
+/* ========================== FOOTER SECTION CSS ======================== */
+
+.footer-icon{
+    font-size: 2.1rem;
+    margin-right: 20px;
+    cursor: pointer;
+  
+}
+.copy-text{
+    margin-bottom: -20px;
+    padding-bottom: 0;
+}
+
+/*========== SCROLL UP ==========*/
+.scroll-up{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+}
+.scroll_up:hover{
+    background-color: var(--first-color-second);
+}
+.scroll_up:hover .uil{
+    transform: rotate(36deg);
+}
+.scroll_up-icon{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* Show scroll */
+.show-scroll{
+    bottom: 5rem;
+}
+
+
+/*========== SCROLL BAR ==========*/
+::-webkit-scrollbar{
+    width: .60rem;
+    background: var(--body-color);
+    border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--btn-color);
+    border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: var(--glass-color);
+}
+
+

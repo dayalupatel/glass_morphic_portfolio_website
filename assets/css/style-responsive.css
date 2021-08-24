@@ -1,0 +1,81 @@
+/* =================== FOR SCREEN LESS THAN 576px ================= */
+@media screen and (max-width:576px) {
+    .glass{
+        padding: 20px 0px;
+    }
+    section{
+        padding: 15px 0;
+    }
+    .home-img{
+        width: 10rem;
+        height: 10rem;
+        border-radius: 10px;
+    }
+    .services-name{
+        font-size: 1.1rem;
+    }
+    .services-btn{
+        font-size: .8rem;
+    }
+    .carousel-item img{
+        width: 85vw;
+        height: auto;
+    }
+    .qualif_title{
+        font-size: 1rem;
+    }
+    .qualif_subtitle{
+        font-size: .9rem;
+    }
+    .qualif_date{
+        font-size: .7rem;
+    }
+    .project-img{
+        width: 10rem;
+        height: 10rem;
+        border-radius: 1rem;
+    }
+    .footer .container{
+        padding:0 ;
+    }
+    .footer-icon{
+        font-size: 1.5rem;
+    }
+    .copy-text{
+        margin-bottom: -10px;
+        padding-bottom: 0;
+    }   
+}
+
+/* =================== FOR SCREEN LESS THAN 320px ================= */
+
+@media screen and (max-width:320px){
+    .home-icon{
+        font-size: 1.1rem;
+    }
+    .home-img{
+        width: 8rem;
+        height: 8rem;
+        border-radius: 10px;
+    }
+    .qualif_title{
+        font-size: .7rem;
+    }
+    .qualif_subtitle{
+        font-size: .7rem;
+    }
+    .services .col-6 {
+        margin-left: 1px;
+        width: 100%;
+    }
+    .services-name{
+        font-size: 1.1rem;
+    }
+    .services-btn{
+        font-size: 1rem;
+    }
+    .footer-icon{
+        font-size: 1.2rem;
+        margin-right: 10px;
+    }
+}
