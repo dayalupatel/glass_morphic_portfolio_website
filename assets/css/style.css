@@ -402,15 +402,8 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000;
-    z-index: var(--z-tooltip);
+    z-index: 8;
     transition: .4s;
-}
-.scroll_up:hover{
-    background-color: var(--first-color-second);
-}
-.scroll_up:hover .uil{
-    transform: rotate(36deg);
 }
 .scroll_up-icon{
     font-size: 1.5rem;
