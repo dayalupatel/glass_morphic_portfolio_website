@@ -31,7 +31,7 @@ body{
 
 }
 html{
-    scroll-behavior: unset !important;
+    scroll-behavior: smooth;
 }
 a{
     text-decoration: none;
