@@ -1,5 +1,14 @@
 //  ================ SCRIPT ================
 
+
+// ------ Preloader ---------
+const preloader = document.getElementById('loader');
+
+function loader() {
+    preloader.style.display = 'none';
+}
+
+
 //     Initialize Swiper
 
 var swiper = new Swiper(".mySwiper", {
